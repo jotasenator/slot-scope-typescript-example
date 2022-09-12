@@ -1,15 +1,18 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <ParentSlot/>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import HelloWorld from './components/HelloWorld.vue';
+import ParentSlot from './components/testingSlots/ParentSlot.vue';
 
 @Options({
   components: {
     HelloWorld,
+    ParentSlot
   },
 })
 export default class App extends Vue {}
