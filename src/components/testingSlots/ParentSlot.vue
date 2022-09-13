@@ -9,11 +9,12 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue'
 import ChildSlot from './ChildSlot.vue';
-export default {
+export default defineComponent({
     name: "parent-slot-component",
     components: { ChildSlot }
-}
+})
 </script>
 
 <style>
